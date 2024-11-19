@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1010e7;
+    color: #333;
+}
+
+/* Navigation Placeholder */
+#nav-placeholder {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Headings */
+h2 {
+    font-size: 2rem;
+    color: #0056b3;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #ae8989;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+li {
+    margin: 15px 0;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(224, 155, 155, 0.2);
+}
+
+/* Styled Headings in List Items */
+li h2 {
+    font-size: 1.5rem;
+    color: #ff5722;
+    margin-bottom: 5px;
+}
+
+li h2:hover {
+    color: #e64a19;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Career Opportunities Section */
+li p {
+    background-color: #e3f2fd;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bbdefb;
+    color: #1a237e;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    li {
+        padding: 8px;
+    }
+}

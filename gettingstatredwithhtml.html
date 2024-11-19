@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <script>
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+        </script>
+    <h1>Introduction</h1>
+    <h3>HTML (HyperText Markup Language) is the backbone of every webpage, providing structure and meaning to web content.</h3>
+    <h2>
+        What You'll Learn
+    </h2>
+    <ul>
+        <li><h2>Basics Of HTML</h2>
+            <p>To get started, you need just a text editor and a web browser. HTML documents use tags enclosed in angle bracketsto define elements.</p>
+        </li>
+        <li>
+            <h2>Building Your First Webpage</h2>
+            <br>
+            <ol>
+                <li>Create a file with a ".html" extension.</li>
+                <li>Use this basic template</li>
+                <li>Open the file in your browser to see your creation!</li>
+            </ol>
+        </li>
+        <li>
+            <h2>The Power of HTML</h2>
+            <p>
+
+                HTML also includes semantic tags like <button class="button">header</button>, <button>footer</button>, and <button>article</button> to improve accessibility and SEO. As you progress, you'll combine HTML with CSS for styling and JavaScript for interactivity.
+            </p>
+        </li>
+        <li>
+            <h2>Conclusion</h2>
+            <p>
+                Learning HTML is like picking up the alphabet of the web. Master it, and you'll have the foundation to build anything from simp le blogs to complex websites.
+
+            </p>
+        </li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Bloglist</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="flexbox.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="nav-placeholder"></div>
+    <script>
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+        </script>
+        <div id="blog-links">
+            <h2>Blog List</h2>
+            <!-- Links to individual blog pages will appear here -->
+          </div>
+          
+          <form id="blog-form">
+            <input type="text" id="blog-title" placeholder="Enter blog title" required />
+            <textarea id="blog-content" placeholder="Write your blog..." required></textarea>
+            <button type="submit">Add Blog</button>
+          </form>
+          
+    
+
+    <div class="container">
+        <div class="row gx-5">
+          <div class="col">
+            <div class="p-3"><a class="p-3" href="gettingstatredwithhtml.html"><h2>Getting Started With HTML</h2></a>
+            <p>HTML, or HyperText Markup Language, is the building block of the web. It's the essential tool developers use to create the structure and layout of websites. With its simple syntax and universal support, HTML is the starting point for anyone diving into web development.</p>
+           </div>
+          </div>
+          <div class="col">
+            <div class="p-3"><a class="p-3" href="whylearnwebdev.html"><h2>Why Learn Webdev</h2></a>
+                <p>Web development combines creativity and technology to craft the digital experiences we rely on daily. From personal portfolios to powerful business platforms, learning web development equips you to shape the internet's future while opening up a world of exciting career opportunities.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3"><a class="p-3" href="skillsformoderndevelopers.html"><h2>Skills For Modern Developers</h2></a>
+                <P>The dynamic world of web development demands both technical expertise and adaptability. Whether you're a beginner or a seasoned coder, honing essential skills like responsive design, front-end development, and collaboration can keep you ahead in this fast-paced industry.</P>
+            </div>
+           </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>

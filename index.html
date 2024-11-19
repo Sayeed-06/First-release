@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="flexbox.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Placeholder -->
+    <div id="nav-placeholder"></div>
+    <script>
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Website</h1>
+            <p>Discover the latest insights, tutorials, and resources to power your web development journey.</p>
+            <a href="Bloglist.html" class="hero-btn">Explore Now</a>
+        </div>
+    </div>
+
+    <!-- Featured Articles Section -->
+    <div id="featured-articles" class="container">
+        <h2>Featured Articles</h2>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <h3>Getting Started with HTML</h3>
+                    <p>Learn the basics of HTML and how it forms the foundation of every website.</p>
+                    <a href="gettingstatredwithhtml.html" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h3>Why Learn Web Development?</h3>
+                    <p>Explore the endless possibilities of a career in web development.</p>
+                    <a href="whylearnwebdev.html" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h3>Mastering CSS for Beautiful Designs</h3>
+                    <p>Understand how CSS can transform your websites into stunning user experiences.</p>
+                    <a href="skillsformoderndevelopers.html" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <script>
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+        </script>
+    <h2>Introduction</h2>
+    <h3>To thrive in web development, you need more than just coding knowledge. A modern web developer blends technical prowess with adaptability and a focus on user experience.</h3>
+    <h3>
+        Key Skills
+    </h3>
+    <ul>
+        <!-- <li><h2>Top Reasons to Learn Web Development</h2>
+            <br>
+            <p>To get started, you need just a text editor and a web browser. HTML documents use tags enclosed in angle bracketsto define elements.</p>
+        </li> -->
+        <li>
+            <h2>Essential Technical Skills</h2>
+            <ol>
+                <li><h3>HTML, CSS, JavaScript:</h3> These form the foundation of web design and interactivity.</li>
+                <li><h3>Responsive Design:</h3>Building websites that adapt seamlessly to mobile, tablet, and desktop devices is a must.</li>
+                <li><h3>Version Control Systems:</h3> Tools like Git enable team collaboration and efficient code management.</li>
+            </ol>
+        </li>
+        <li>
+            <h2>Soft Skills for Success</h2>
+            <ol>
+                <li><h3>Problem-Solving:</h3> Address technical challenges creatively.</li>
+                <li><h3>Adaptability: </h3>Stay updated with trends like progressive web apps and frameworks like React or Angular.</li>
+                <li><h3>Communication:</h3> Collaborate effectively with designers, developers, and stakeholders.</li>
+            </ol>
+        </li>
+        <li>
+            <h2>Conclusion</h2>
+            
+            <p>
+                Web development is as much about mindset as it is about technology. Stay curious, keep learning, and practice regularly to excel in this dynamic field.
+
+            </p>
+        </li>
+    </ul>
+</body>
+</html>

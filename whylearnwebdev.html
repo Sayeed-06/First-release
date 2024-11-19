@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <script>
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+        </script>
+    <h2>Introduction</h2>
+    <h3>Web development is a highly sought-after skill, blending creativity with technology. Whether you want to build a personal blog or launch a business, understanding web development empowers you to bring ideas to life online.</h3>
+    <h3>
+        About Webdev
+    </h3>
+    <ul>
+        <!-- <li><h2>Top Reasons to Learn Web Development</h2>
+            <br>
+            <p>To get started, you need just a text editor and a web browser. HTML documents use tags enclosed in angle bracketsto define elements.</p>
+        </li> -->
+        <li>
+            <h2>Top Reasons to Learn Web Development</h2>
+            <ol>
+                <li><h2>Universal Demand:</h2> Websites are a necessity for businesses, nonprofits, and individuals, ensuring steady career opportunities</li>
+                <li><h2>Creative Expression:</h2> Design and develop platforms that reflect your vision, whether for storytelling, art, or commerce.</li>
+                <li><h2>Empowering Technology:</h2> Web skills enable you to solve real-world problems, from interactive user interfaces to custom solutions for communities.</li>
+            </ol>
+        </li>
+        <li>
+            <h2>Career Opportunities</h2>
+            <p>
+
+                From front-end development, where aesthetics and usability reign, to back-end development focusing on server functionality, there’s a niche for every talent. Full-stack developers, who bridge both worlds, are particularly in demand.
+            </p>
+        </li>
+        <li>
+            <h2>Conclusion</h2>
+            <p>
+                Web development isn't just a skill; it's a gateway to a world of innovation and opportunity. By learning it, you join a global community shaping how we connect, communicate, and create online.
+
+            </p>
+        </li>
+    </ul>
+</body>
+</html>
